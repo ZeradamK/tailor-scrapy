@@ -1,0 +1,10 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+redis==5.0.7
+pydantic==2.9.2
+scrapy==2.13.3
+scrapy-playwright==0.0.40
+playwright==1.46.0
+scrapy-user-agents==0.1.1
+scrapy-rotating-proxies==0.6.2
+python-dotenv==1.0.1
