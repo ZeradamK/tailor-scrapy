@@ -1,0 +1,29 @@
+version: "3.8"
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: fashion-redis
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+
+  scraper-api:
+    build: .
+    container_name: fashion-scraper-api
+    environment:
+      - REDIS_URL=redis://fashion-redis:6379/0
+    ports:
+      - "8001:8001"
+    depends_on:
+      - redis
+    restart: unless-stopped
+
+  scraper-worker:
+    build: .
+    container_name: fashion-scraper-worker
+    command: ["python", "worker.py"]
+    environment:
+      - REDIS_URL=redis://fashion-redis:6379/0
+    depends_on:
+      - redis
+    restart: unless-stopped

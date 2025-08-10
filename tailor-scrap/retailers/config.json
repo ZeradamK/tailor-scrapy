@@ -1,0 +1,212 @@
+{
+  "zara.com": {
+    "search": "https://www.zara.com/us/en/search?searchTerm={query}",
+    "itemLink": "a[href*='/p'], a[href*='/product/']::attr(href)",
+    "title": "h1, [itemprop='name']",
+    "price": "[itemprop='price'], [data-qa-action='product-card-price']",
+    "image": "img::attr(src)",
+    "availability": ".availability",
+    "description": ".product-description, [data-qa-action='description']",
+    "brand": "Zara"
+  },
+  "hm.com": {
+    "search": "https://www2.hm.com/en_us/search-results.html?q={query}",
+    "itemLink": ".product-item a::attr(href)",
+    "title": "h1, .product-name, [data-product-name]",
+    "price": ".price, [data-price]",
+    "image": "img::attr(src)",
+    "availability": ".availability",
+    "description": ".product-description, [data-product-description]",
+    "brand": "H&M"
+  },
+  "uniqlo.com": {
+    "search": "https://www.uniqlo.com/us/en/search/?q={query}",
+    "itemLink": "a[href*='/product/']::attr(href)",
+    "title": "h1, [data-test='product-name']",
+    "price": "[data-test='product-price'], .price, [itemprop='price']",
+    "image": "img::attr(src)",
+    "availability": "[data-test='availability']",
+    "description": "[data-test='description'], .product-description",
+    "brand": "UNIQLO"
+  },
+  "nike.com": {
+    "search": "https://www.nike.com/w?q={query}",
+    "itemLink": "a[href*='/t/']::attr(href)",
+    "title": "h1, [data-test='product-title']",
+    "price": "[data-test='product-price'], .price, [itemprop='price']",
+    "image": "img::attr(src)",
+    "availability": "[data-test='product-availability']",
+    "description": "[data-test='product-description'], .description",
+    "brand": "Nike"
+  },
+  "asos.com": {
+    "search": "https://www.asos.com/search/?q={query}",
+    "itemLink": "a[data-auto-id='productTile']::attr(href), a._3TqU78::attr(href)",
+    "title": "h1, [data-test='product-title']",
+    "price": "[data-id='current-price'], .price",
+    "image": "img::attr(src)",
+    "availability": "",
+    "description": "[data-test='product-description'], .product-description",
+    "brand": "ASOS"
+  },
+  "gap.com": {
+    "search": "https://www.gap.com/browse/search.do?searchText={query}",
+    "itemLink": "a.product-card__link::attr(href)",
+    "title": "h1, .pdp-name",
+    "price": ".pdp-pricing .price, [itemprop='price']",
+    "image": "img::attr(src)",
+    "availability": "",
+    "description": ".product-description, [data-test='description']",
+    "brand": "Gap"
+  },
+  "macys.com": {
+    "search": "https://www.macys.com/shop/featured/{query}",
+    "itemLink": "a.productDescLink::attr(href), a[aria-label*='Product']::attr(href)",
+    "title": "h1, [itemprop='name']",
+    "price": "[data-auto='price'], [itemprop='price']",
+    "image": "img::attr(src)",
+    "availability": "",
+    "description": "[data-auto='longDescription'], .product-description",
+    "brand": "Macy's"
+  },
+  "nordstrom.com": {
+    "search": "https://www.nordstrom.com/sr?keyword={query}",
+    "itemLink": "a[href*='/s/']::attr(href)",
+    "title": "h1, [data-testid='product-title']",
+    "price": "[data-testid='price'], [itemprop='price']",
+    "image": "img::attr(src)",
+    "availability": "",
+    "description": "[data-testid='product-details'], .product-description",
+    "brand": "Nordstrom"
+  },
+  "mango.com": {
+    "search": "https://shop.mango.com/us/search?q={query}",
+    "itemLink": "a[href*='/p']::attr(href)",
+    "title": "h1, [itemprop='name']",
+    "price": "[itemprop='price'], .price",
+    "image": "img::attr(src)",
+    "availability": "",
+    "description": ".product-description",
+    "brand": "Mango"
+  },
+  "shein.com": {
+    "search": "https://www.shein.com/pse/{query}.html",
+    "itemLink": "a.j-expose__product-item__img::attr(href), a[href*='/p-']::attr(href)",
+    "title": "h1, .product-intro__head-name",
+    "price": ".product-intro__head-price, [itemprop='price']",
+    "image": "img::attr(src)",
+    "availability": "",
+    "description": ".product-intro__description",
+    "brand": "SHEIN"
+  },
+  "myntra.com": {
+    "search": "https://www.myntra.com/{query}",
+    "itemLink": "a[href*='/buy/']::attr(href), a[href*='/']::attr(href)",
+    "title": "h1, .pdp-title",
+    "price": ".pdp-price, [itemprop='price']",
+    "image": "img::attr(src)",
+    "availability": "",
+    "description": ".pdp-product-description",
+    "brand": "Myntra"
+  },
+  "puma.com": {
+    "search": "https://us.puma.com/us/en/search?q={query}",
+    "itemLink": "a[href*='/us/en/pd/']::attr(href)",
+    "title": "h1, [data-test='product-title']",
+    "price": "[data-test='product-price'], .price",
+    "image": "img::attr(src)",
+    "availability": "",
+    "description": "[data-test='product-description'], .product-description",
+    "brand": "PUMA"
+  },
+  "fashionnova.com": {
+    "search": "https://www.fashionnova.com/search?q={query}",
+    "itemLink": "a[href*='/products/']::attr(href)",
+    "title": "h1, .product__title",
+    "price": ".price-item, [itemprop='price']",
+    "image": "img::attr(src)",
+    "availability": "",
+    "description": ".product__description",
+    "brand": "Fashion Nova"
+  },
+  "stockx.com": {
+    "search": "https://stockx.com/search?s={query}",
+    "itemLink": "a[href*='/']::attr(href)",
+    "title": "h1, [data-testid='product-title']",
+    "price": "[data-testid='market-price'], .en-US",
+    "image": "img::attr(src)",
+    "availability": "",
+    "description": "[data-testid='product-description'], .description",
+    "brand": "StockX"
+  },
+  "lululemon.com": {
+    "search": "https://shop.lululemon.com/search?Ntt={query}",
+    "itemLink": "a[href*='/p/']::attr(href)",
+    "title": "h1, [data-testid='pdp-title']",
+    "price": "[data-testid='pdp-price'], [itemprop='price']",
+    "image": "img::attr(src)",
+    "availability": "",
+    "description": "[data-testid='description']",
+    "brand": "Lululemon"
+  },
+  "victoriassecret.com": {
+    "search": "https://www.victoriassecret.com/us/search?search-term={query}",
+    "itemLink": "a[href*='/p/']::attr(href)",
+    "title": "h1, [data-test='pdp-name']",
+    "price": "[data-test='price'], [itemprop='price']",
+    "image": "img::attr(src)",
+    "availability": "",
+    "description": "[data-test='description']",
+    "brand": "Victoria's Secret"
+  },
+  "meesho.com": {
+    "search": "https://www.meesho.com/search?q={query}",
+    "itemLink": "a[href*='/product/']::attr(href)",
+    "title": "h1",
+    "price": "[class*='Price'], [itemprop='price']",
+    "image": "img::attr(src)",
+    "availability": "",
+    "description": "",
+    "brand": "Meesho"
+  },
+  "poshmark.com": {
+    "search": "https://poshmark.com/search?query={query}",
+    "itemLink": "a.tile__card::attr(href), a[href*='/listing/']::attr(href)",
+    "title": "h1, [itemprop='name']",
+    "price": "[itemprop='price'], .pdp-pricing__price__current",
+    "image": "img::attr(src)",
+    "availability": "",
+    "description": ".listing__description",
+    "brand": "Poshmark"
+  },
+  "zozo.jp": {
+    "search": "https://zozo.jp/search/?p_keyv={query}",
+    "itemLink": "a[href*='/shop/']::attr(href), a[href*='/product/']::attr(href)",
+    "title": "h1",
+    "price": ".price, [itemprop='price']",
+    "image": "img::attr(src)",
+    "availability": "",
+    "description": ".product-detail__description",
+    "brand": "ZOZOTOWN"
+  },
+  "vinted.fr": {
+    "search": "https://www.vinted.fr/catalog?search_text={query}",
+    "itemLink": "a[href*='/items/']::attr(href)",
+    "title": "h1, [itemprop='name']",
+    "price": "[data-testid='ad-detail-price'], [itemprop='price']",
+    "image": "img::attr(src)",
+    "availability": "",
+    "description": "[data-testid='ad-detail-description']",
+    "brand": "Vinted"
+  },
+  "vinted.co.uk": {
+    "search": "https://www.vinted.co.uk/catalog?search_text={query}",
+    "itemLink": "a[href*='/items/']::attr(href)",
+    "title": "h1, [itemprop='name']",
+    "price": "[data-testid='ad-detail-price'], [itemprop='price']",
+    "image": "img::attr(src)",
+    "availability": "",
+    "description": "[data-testid='ad-detail-description']",
+    "brand": "Vinted"
+  }
+}
